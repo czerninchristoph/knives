@@ -1,0 +1,183 @@
+
+
+
+@media all and (max-width: 870px) {
+    
+    
+
+
+
+  
+ 
+
+/* Burger */
+
+
+
+
+
+.menu{
+    
+	line-height: 50px;
+	font-size: 2em;
+    font-family: 'Montserrat';
+    
+    
+    
+ 	font-weight: 100;
+    padding: 100px 40px 40px 50px;
+}
+
+
+.menu ul li{
+    list-style: none;
+    padding-bottom: 0px;
+    
+}    
+    
+
+
+    
+
+    
+    
+    
+    
+
+
+
+/*  First Container */
+
+
+.one{
+    }
+
+.header-one{
+    width: auto;
+    font-size: 2.5em;
+}
+
+.subheader-one{
+    font-size: 1.3em;
+ 
+}
+
+
+
+
+/*  Logo  */
+
+
+.logo{
+    width: 80%;
+    height: 80%;
+}
+   
+  
+
+
+
+
+/*  Second Container */
+
+
+    
+.section-2 .filter li{
+    width: 200px !important;
+    font-size: 25px;
+}
+    
+    
+
+.pics{
+    margin-bottom: 70px;
+    margin-top: 30px;
+}
+
+ .raster{
+    width: 88%;
+    height: 270px;
+    margin-bottom: 50px;
+    overflow: hidden;
+    display: block;
+    margin-left: 6%;
+}   
+    
+.raster p {
+    font-size: 1.4em;
+}    
+    
+    
+    
+    
+.fancybox-close{
+    top: 10px;
+    right: 15px;
+}    
+
+
+/*  Footer Container */
+
+
+footer{
+    height: auto;
+}
+
+.footer-text{
+    font-size: 1.2em;
+    padding: 40px 30px 30px 30px;
+}
+
+.footer-header{
+    font-size: 1.3em;
+}
+
+.footer-text p{
+    margin-top: 17px;
+    margin-left: 8px;
+    padding-left: 30px;
+}
+    
+    
+    
+    
+    
+    
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+@media all and (max-width: 560px) {
+  
+
+.pics{
+    width: 100%;
+}
+  
+ .raster{
+    width: 88%;
+    height: 320px;
+    margin-bottom: 50px;
+    overflow: hidden;
+    display: block;
+    margin-left: 6%;
+}     
+    
+    .header-2 p, .filter{
+        display: none;
+    }   
+    
+    
+    
+    
+}

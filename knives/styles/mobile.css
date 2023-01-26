@@ -1,0 +1,326 @@
+
+
+
+
+
+
+
+
+
+
+
+@media all and (max-width: 1084px) {
+    
+    
+    
+    nav{
+        display: none;
+    }
+    
+    .nav{
+        display: block;
+    }
+    
+    
+    
+ /* Disable some stuff for mobile users */ 
+    
+    
+ .screen-only{
+    display: none;
+}
+
+.mobile-only{
+    display: block;
+}
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+/* Burger */
+
+
+/*
+
+.nav{
+    width: 300px;
+    height: 100%;
+    z-index: 99;
+    display: block;
+    text-decoration: none;
+    padding: 0px;
+    overflow: hidden;
+    right: 0px;
+
+    position: fixed;
+    -webkit-backface-visibility:hidden;
+}
+
+
+
+.button{
+    margin: 20px;
+	z-index: 90;
+    margin-left: 40px;
+    display: block;
+    right: 0px;
+    
+    position: fixed;
+    -webkit-backface-visibility:hidden;
+    
+}
+    
+    
+    
+    
+    
+    
+
+.button span {
+	display: block;
+	width: 40px;
+	height: 4px;
+	margin: 10px 0;
+	z-index: 90;
+}
+
+    
+    
+.fixed-supported { 
+    position: fixed; 
+    -webkit-backface-visibility:hidden;
+}    
+    
+    
+    
+    
+    
+.menu{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin-right: -400px;
+	display: block;
+    top: 0px;
+    right: 0px;
+    z-index: 40;
+	line-height: 80px;
+	font-size: 35px;
+    
+    background-color: #0d0d0d;
+    color: white;
+    opacity: 0.9;
+    
+
+    
+    
+ 	font-weight: 100;
+    padding: 40px;
+    padding-top: 100px;
+    overflow: hidden;
+    transition: margin-right 0.5s;
+    -webkit-transition: margin-right 0.5s;
+    -moz-transition: margin-right 0.5s;
+}
+
+
+.menu ul li{
+    list-style: none;
+    padding-bottom: 0px;
+    
+    opacity: 1;
+}    
+    
+.menu h6{
+  	font-weight: 200;   
+	font-size: 0.8em;
+}
+
+.menu a:hover{
+    text-decoration: underline;
+}
+
+
+
+.expand {
+	display: block !important; 
+    margin-right: 0px;
+
+
+}
+
+
+
+    
+
+.button span{
+    transition: transform 0.5s;
+    -webkit-transition: -webkit-transform 0.5s;
+    -moz-transition: -moz-transform 0.5s;
+    background-color: #D3511A;
+}
+
+#go{
+    position: relative;
+}
+#spinr{
+    position: relative;
+}
+#spinl{
+    position: relative;
+}
+
+
+.go{
+    transform: translate(-100px);    
+    -webkit-transform: translate(100px);
+    -moz-transform: translate(100px);
+}
+
+.spinr{
+    transform: rotate(45deg) translate(0px, 10px);
+    -webkit-transform: rotate(45deg) translate(0px, 10px);
+    -moz-transform: rotate(45deg) translate(0px, 10px);
+}
+
+.spinl{
+    transform: rotate(-45deg) translate(0px, -10px);
+    -webkit-transform: rotate(-45deg) translate(0px, -10px);
+    -moz-transform: rotate(-45deg) translate(0px, -10px);
+}
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+ .burger-to-g{
+     color: #D3511A ;
+     padding-top: 3px;
+     margin-top: 5px;
+ }
+
+
+
+*/
+
+
+
+/*  First Container */
+
+
+.one{
+    padding-top: 50vh;
+    
+    
+
+}
+
+.header-one{
+    font-size: 4em;
+}
+
+.subheader-one{
+    font-size: 1.3em;
+ 
+}
+
+
+
+/*  Logo  */
+
+
+
+
+
+
+/*  Second Container */
+
+   .section-2 .filter{
+    }  
+    
+    .section-2 .filter li{
+        display: block;
+        width: 270px;
+        margin-bottom: 20px;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    
+
+.pics{
+    margin-bottom: 100px;
+    margin-top: 50px;
+    width: 90%;
+}
+
+ .raster{
+    width: 40%;
+    height: 320px;
+    margin-bottom: 50px;
+    overflow: hidden;
+    display: inline-block;
+    margin-left: 6%;
+}   
+    
+.raster p {
+    font-size: 1.4em;
+}    
+    
+ 
+    
+    
+/*  Footer Container */
+
+
+footer{
+    height: auto;
+}
+
+.footer-text{
+    font-size: 1.2em;
+    padding: 50px 50px 40px 100px;
+}
+
+.footer-header{
+    font-size: 1.8em;
+}
+
+.footer-text p{
+    margin-top: 17px;
+    margin-left: 8px;
+    padding-left: 30px;
+}
+    
+    
+    
+    
+    
+    
+    
+    
+}
+
+
+
+
