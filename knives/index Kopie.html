@@ -141,10 +141,11 @@
 						<h1>Raues Leder, glatter Stahl!</span></h1>
 						<h4>Handwerkskunst auf höchstem Niveau</h4>
 						<p>Hier finden Sie eine Sammlung von handgefertigten Messern und Accessoires aus traditionellen 
-							Materialien wie Holz, Metall und Horn, sowie aus zeitgenössischen Materialien wie leuchtenden Harzen. </p>
-						<p> Das Repertoire umfasst auch maßgefertigte Scheiden und Lederaccessoires an. 
-							Diese sind in Kombination mit den passenden Messern ideal für traditionelle österreichische Tracht, Jagdausrüstung, als Küchenaccessoires und vieles mehr.</p>
-						<!-- <a class="btn btn-lg btn-circle btn-outline-new-white" href="#">Reservation</a> -->
+							Materialien wie Holz, Metall und Horn, Stoff und Leder. </p>
+						<p> Das Repertoire umfasst auch maßgefertigte Taschen und Lederaccessoires. 
+							Diese sind in Kombination mit den passenden Messern ideal für traditionelle österreichische Tracht, 
+							Jagd- und Safariausrüstung, als Küchenaccessoires und vieles mehr.
+					   </p>
 					</div>
 				</div>
 			</div>
@@ -243,65 +244,10 @@
 	
 
 
-    <script src="js/gallery.js"></script>
-	<script>
-		function shuffle(array) {
-		let currentIndex = array.length,  randomIndex;
-		// While there remain elements to shuffle.
-		while (currentIndex != 0) {
-			// Pick a remaining element.
-			randomIndex = Math.floor(Math.random() * currentIndex);
-			currentIndex--;
-			// And swap it with the current element.
-			[array[currentIndex], array[randomIndex]] = [
-			array[randomIndex], array[currentIndex]];
-		}
-		return array;
-		}
-		
-		var gallery_parent = document.getElementById("gallery-list");
-		for (i = 0; categories.length > i; i++){
-			// setting the filter
-			var category_name = categories_names[i];
-			if (category_name == "kueche") category_name = "küche";
-			// creating the button
-			//<button class="active" data-filter="*">All</button>
-			var btn = document.createElement("button");
-			btn.setAttribute("data-filter", category_name);
-			btn.innerText = category_name;
-			// set it to the parent of the filter buttons
-			document.getElementById("gallery-filters").appendChild(btn);
-
-			// setting the images
-			var cat = categories[i];
-			cat = shuffle(cat);
-
-			for (j = 0; cat.length > j; j++){
-				var image_href = cat[j];
-				
-				var img = document.createElement("img"); // new empty img tag
-				img.src = image_href; // set the img's source
-				img.className = "img-fluid";
-
-				// create a wrapping a tag
-				var a = document.createElement("a");
-				a.className = "gallery-lightbox ";
-				a.href = image_href;
-				a.setAttribute("data-lightbox","roadtrip");
-				a.appendChild(img);
-				
-				// create a wrapping a tag
-				var div = document.createElement("div");
-				div.className = "fadeIn gallery-single " + category_name;
-				div.href = image_href;
-				div.appendChild(a);
-				
-				gallery_parent.appendChild(div); // save it in the parent
-			}
-		}
+    <script src="js/gallery_meta.js"></script>
+    <script src="js/gallery_setup.js"></script>
 
 
-	</script>
 
 	
 	<a href="#" id="back-to-top" title="Back to top" style="display: none;">&uarr;</a>

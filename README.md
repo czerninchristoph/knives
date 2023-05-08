@@ -14,6 +14,8 @@ Beim ersten Ausführen eines Updates, musst du erst die folgenden 2 Kommandos in
 * Fließtexte können im `index.html` bearbeitet werden. Bitte um Vorsicht!  
 * Im Ordner `knives/images/gallery` können neue Bilder in die jeweiligen Ordner eingefügt werden.  
 Falls möglich, bitte die Bilder klein halten (Größe reduzieren, DPI nicht größer als 150 ... 75 reichen wahrscheinlich).  
+Wichtig: Dateinamen *ohne* Abstände und Umlaute.
+Speichern vor upload   *command s*, nach allen Änderungen
 
 ### 2. Web-Inhalte hochladen
 Mach ein Terminal-Fenster auf:  
@@ -29,3 +31,8 @@ Folgende Frage wird dir beim Upload gestellt:
 Darauf tippst du folgendes ins Terminal ein:  
 `compare`  
 Dann drückste *Enter* und der Uplaod wird durchgeführt.
+
+### 3. Update prüfen
+Browser speichern immer Inhalte kurzfristig, um nicht bei jedem Aufruf Laden alles neu laden müssen. Das nennt sich *Caching*. Drum sind Änderungen uU. nicht gleich sichtbar.  
+Laden ohne Caches -> *SHIFT* gedrückt halten und neu laden
+
