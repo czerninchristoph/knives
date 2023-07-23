@@ -58,13 +58,13 @@ for (i = 0; categories.length > i; i++){
         // create a wrapping a tag
         var a = document.createElement("a");
         a.className = "gallery-lightbox ";
-        a.href = image_href;
+        //a.href = image_href;
         a.setAttribute("data-lightbox","roadtrip");
         a.appendChild(img);
         
         // create a wrapping div tag
         var div = document.createElement("div");
-        div.className = "fadeIn gallery-single " + category_name;
+        div.className = "fadeIn gallery-single grid-mode-item" + " " + category_name;
         div.href = image_href;
         div.appendChild(a);
         
@@ -101,17 +101,20 @@ function showAll(arr){
 
 
 
-
-
 var portfolio = $('.special-menu');
 portfolio.on('click', 'button', function () {
+
     // make clicked button active, make sibling not active
     $(this).addClass('active').siblings().removeClass('active');
 
     var filterValue = $(this).attr('data-filter');
+
     // Applying the filter
     // first get the parent element
     var galleryList = document.getElementById("gallery-list")
+    
+    console.log(galleryList);
+
     if (filterValue == "*"){
         // make every gallery item visible
         showAll(galleryList.getElementsByClassName("gallery-single"));
@@ -121,6 +124,7 @@ portfolio.on('click', 'button', function () {
         //console.log(x)
         //
         // show the items with the correct filterValue
+        console.log(galleryList.getElementsByClassName(filterValue));
         showAll(galleryList.getElementsByClassName(filterValue));
     }
 
@@ -138,3 +142,34 @@ portfolio.on('click', 'button', function () {
 
 
 
+function scrollMode(){
+    var galleryList = document.querySelectorAll(".gallery-single");
+    for(var single of galleryList){
+        single.classList.remove("grid-mode-item");
+        single.classList.add("scroll-mode-item");
+    }   
+}
+
+function gridMode(){
+    var galleryList = document.querySelectorAll(".gallery-single");
+    for(var single of galleryList){
+        single.classList.add("grid-mode-item");
+        single.classList.remove("scroll-mode-item");
+    }   
+}
+
+
+
+
+
+var galleryItem  = $('#gallery-list');
+galleryItem.on('click', '.gallery-single', function () {
+    if (this.classList.contains("grid-mode-item")){
+        scrollMode();
+    } else if (this.classList.contains("scroll-mode-item")) {
+        gridMode();
+    }
+    this.scrollIntoView();
+    
+
+});

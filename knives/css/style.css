@@ -596,11 +596,20 @@ button:focus{
     overflow: hidden;
     -webkit-box-shadow: 0 0 10px #ccc;
     box-shadow: 0 0 10px #ccc;
-    min-height: 100px;
-    height: 200px;
-    width: 30%;
-    max-width: 300px;
+    /*
+        min-height: 100px;
+        max-width: 300px;
+        transition: width .5s ease-in-out;
+        */
     background-color: rgb(26, 26, 26);
+}
+
+.grid-mode-item {
+    width: 30%;
+}
+
+.scroll-mode-item {
+    width: 100%;
 }
 
 
