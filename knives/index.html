@@ -29,18 +29,7 @@
     <link rel="stylesheet" href="css/animate.css">
 	<!-- JQuery -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-	<!-- Fancybox 
-		<link href="css/lightbox.css" rel="stylesheet" />
-		<script src="js/lightbox.js"></script>
-	-->
 
-
-
-
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
 
 </head>
 
@@ -66,7 +55,8 @@
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">
 			<div class="container">
 				<a class="navbar-brand" href="#header">
-					<img src="images/branding/cc_logo_pos_rgb.png" alt="" />
+					<img id="logo_cc" src="images/branding/cc_pos_rgb.png" alt="" />
+					<!-- <img id="logo_text" src="images/branding/text_logo_pos_rgb.png" alt="" /> -->
 				</a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-rs-food" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
 				  <span class="navbar-toggler-icon"></span>
@@ -132,6 +122,9 @@
 	<!-- Start About -->
 	<div class="about-section-box">
 		<div class="container">
+			<div class="row" id="showcase">
+				<img src="images/branding/cc_logo_pos_rgb.png" alt="" class="logo-showcase">
+			</div>
 			<div class="row">
 				<div class="col-lg-6 col-md-6 col-sm-12">
 					<img src="images/about-img.jpg" alt="" class="img-fluid">
@@ -204,7 +197,7 @@
 	<!-- End Menu -->
 	
 
-	<!-- Start Customer Reviews -->
+	<!-- Start Artist Profile -->
 	<div class="team-box negative pb-5 pt-5">
 		<div class="container">
 			<div class="row">
@@ -227,7 +220,7 @@
 			</div>
 		</div>
 	</div>
-	<!-- End Customer Reviews -->
+	<!-- End Artist Profile -->
 	
 	<!-- Start Contact info -->
 	<div class="contact-imfo-box">
@@ -248,9 +241,11 @@
 	<!-- End Contact info -->
 	
 
-
+	<!-- activate custom JavaScript Files -->
     <script src="js/gallery_meta.js"></script>
+    <script src="js/gallery_data.js"></script>
     <script src="js/gallery_setup.js"></script>
+
 
 
 

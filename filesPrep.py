@@ -4,7 +4,8 @@ There are some folders in the images/gallery folder.
 Each of them is a category for the images included.
 The host can put new images into one of these folders. 
 If he then runs this script, the filenames and categories will automatically be 
-added to the website. 
+added to the website. It writes all file-paths as strings into a JS-array in a 
+separate JS-file called "gallery_meta.js", which is then sourced by another JS-file. 
 Then the webcontent just needs to be uploaded to the server.
 """
 
@@ -29,7 +30,6 @@ def main():
         files_js = f"const {d} = {files}\n"
         out_js += files_js # store it in the output string
 
-    # make two more constants:
 
     # one is an array of all filename arrays
     merger_js = f"const categories = [{dirs}]\n".replace("[[", "[").replace("]]", "]").replace("\'", "")

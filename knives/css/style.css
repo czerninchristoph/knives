@@ -367,7 +367,7 @@ button:focus{
 }
 
 .navbar-brand img{
-    height: 80px;
+    height: 40px;
 }
 
 /*------------------------------------------------------------------
@@ -512,6 +512,21 @@ button:focus{
 	color: #ffffff;
 }
 
+#showcase {
+    margin-bottom: 80px;
+}
+
+#showcase .logo-showcase {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* width: 50%; */
+    min-height: 200px;
+    max-height: 300px;
+    height: 20vw;
+    /* margin: 5%; */
+}
+
 /*------------------------------------------------------------------
     QT
 -------------------------------------------------------------------*/
@@ -541,9 +556,10 @@ button:focus{
 }
 
 /*------------------------------------------------------------------
-    Menu
+    Gallery
 -------------------------------------------------------------------*/
 
+/* Filter Menu */
 .menu-box{
 	padding: 70px 0px;
 }
@@ -575,7 +591,7 @@ button:focus{
     font-weight: 600;
     font-size: 14px;
     cursor: pointer;
-    background: #fff;
+    background: rgba(255,255,255, 0);
     padding: 12px 40px;
     border: none;
     border-radius: 4px;
@@ -587,6 +603,10 @@ button:focus{
     box-shadow: 2px 20px 45px 5px rgba(0,0,0,.2);
 }
 
+
+
+/* Actual Gallery Grid bzw. Scroller */
+
 #gallery-list {
     margin: 0px 5%;
 }
@@ -596,66 +616,28 @@ button:focus{
     overflow: hidden;
     -webkit-box-shadow: 0 0 10px #ccc;
     box-shadow: 0 0 10px #ccc;
-    /*
-        min-height: 100px;
-        max-width: 300px;
-        transition: width .5s ease-in-out;
-        */
     background-color: rgb(26, 26, 26);
+    object-fit: cover;
+    /* overwrite the box-sizing */
 }
 
 .grid-mode-item {
-    width: 30%;
+    width: 28%;
+    /* height: 220px; */
 }
 
 .scroll-mode-item {
     width: 100%;
+    height: auto;
 }
 
-
-@keyframes slide {
-  from {max-height: 0;}
-  to {max-height: 500px;}
-}
 
 .gallery-single img{
-    min-height: 100%;
+    min-height: 100%;    
     min-width: 100%;
+    /* width: auto; */
     vertical-align: center;
-    opacity: 01;
-}
-
-
-.why-text {
-    position: absolute;
-    left: 0;
-    bottom: -100%;
-    right: 0;
-    height: 100%;
-    background: rgba(207, 166, 113, 0.9);
-    padding: 12px 12px;
-    -webkit-transition: all .3s ease;
-    transition: all .3s ease;
-}
-.why-text h4{
-	color: #ffffff;
-	font-size: 24px;
-	font-weight: 500;
-	font-family: 'Arbutus Slab', serif;
-}
-.why-text p{
-	color: #ffffff;
-	font-size: 18px;
-	border-bottom: 1px dashed #010101;
-	margin: 0px;
-	padding-bottom: 15px;
-	margin-top: 15px;
-	margin-bottom: 15px;
-}
-.why-text h5{
-	font-size: 28px;
-	font-weight: 600;
-	color: #ffffff;
+    opacity: 1;
 }
 
 .gallery-single:hover .why-text{
@@ -663,26 +645,17 @@ button:focus{
 }
 
 
-/*------------------------------------------------------------------
-    Gallery
--------------------------------------------------------------------*/
+@media (min-width: 800px) {
+    .grid-mode-item  {
+        transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    }
+    .grid-mode-item:hover  {
+        transform: scale(1.05);
+        box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+    }
+}
 
-.gallery-box{
-	padding: 70px 0px;
-}
-.tz-gallery{
-	margin-top: 30px;
-}
-.tz-gallery .lightbox img {
-    width: 100%;
-    margin-bottom: 30px;
-    transition: 0.2s ease-in-out;
-    box-shadow: 0 2px 3px rgba(0,0,0,0.2);
-}
-.gallery-single img:hover lol {
-    transform: scale(1.05);
-    box-shadow: 0 8px 15px rgba(0,0,0,0.3);
-}
+
 
 /*------------------------------------------------------------------
     Team
